@@ -18,8 +18,13 @@ android {
         }
     }
 }
-
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.github.tvbarthel:Cheerleader:61a77e45f2'
 }
